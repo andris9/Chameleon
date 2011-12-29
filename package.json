@@ -1,0 +1,37 @@
+{
+    "name": "chameleon",
+    "description": "Static server",
+    "version": "0.1.0",
+    "author" : "Andris Reinman",
+    "maintainers":[
+        {
+            "name":"andris",
+            "email":"andris@node.ee"
+        }
+    ],
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/andris9/chameleon.git"
+    },
+    "bin":{
+        "chameleon-server": "./bin/chameleon-server",
+        "chameleon-add-file": "./bin/chameleon-add-file",
+    },
+    "main" : "./lib/server",
+    "licenses" : [
+        {
+            "type": "MIT",
+            "url": "http://github.com/andris9/chameleon/blob/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+        "mimelib-noiconv":"*"
+        "commander": "*",
+        "swig": "*",
+        "optimist": "*",
+        "fetch": "*",
+        "mimelib-noiconv": "*"
+    },
+    "engine": [ "node >=0.6.0" ],
+    "keywords": ["http"]
+}
