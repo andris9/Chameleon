@@ -14,8 +14,8 @@
         "url" : "http://github.com/andris9/chameleon.git"
     },
     "bin":{
-        "chameleon-server": "./bin/chameleon-server",
-        "chameleon-add-file": "./bin/chameleon-add-file",
+        "chameleon-server": "./bin/chameleon-server.js",
+        "chameleon-add-file": "./bin/chameleon-add-file.js"
     },
     "main" : "./lib/server",
     "licenses" : [
@@ -25,7 +25,7 @@
         }
     ],
     "dependencies": {
-        "mimelib-noiconv":"*"
+        "mimelib-noiconv":"*",
         "commander": "*",
         "swig": "*",
         "optimist": "*",
